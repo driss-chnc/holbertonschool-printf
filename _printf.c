@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
     int count;
 
     if (format == NULL)
-    {                       //verifie directly if the pointer format is null and return -1 error if true
+    {                       
         return (-1);
     }
 
@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
     {
         if (format[i] != '%')
         {
-            count += _pucthar(format[i]);
+            count += _putchar(format[i]);
             i++;
         }
         if (format[i] == '%')
@@ -33,6 +33,10 @@ int _printf(const char *format, ...)
             if (format[i] == 'c')
             {
                 count += print_char(args);
+            }
+            else if ((format[i] == 'i') || (format[i] == 'd'))
+            {
+                count += print_string(args);
             }
             i++;
         }
