@@ -36,7 +36,11 @@ int _printf(const char *format, ...)
             }
             else if ((format[i] == 'i') || (format[i] == 'd'))
             {
-                count += print_string(args);
+                count += print_integer(args);
+            }
+            else if (format [i] == 'u')
+            {
+                count += print_unsigned(args);
             }
             i++;
         }
