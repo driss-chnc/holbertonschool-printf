@@ -38,9 +38,13 @@ int _printf(const char *format, ...)
             {
                 count += print_integer(args);
             }
-            else if (format [i] == 'u')
+            else if (format[i] == 'u')
             {
                 count += print_unsigned(args);
+            }
+            else if (format[i] == '%')
+            {
+                count += print_modulo(args);
             }
             i++;
         }

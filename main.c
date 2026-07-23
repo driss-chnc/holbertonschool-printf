@@ -25,7 +25,8 @@ int main(void)
     printf("Character:[%c]\n", 'H');
     _printf("Unsigned:[%u]\n", ui);
     printf("Unsigned:[%u]\n", ui);
-
+    _printf("Modulo:100[%%]\n");
+    printf("Modulo:100[%%]\n");
 
     return (0);
 }
