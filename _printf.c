@@ -50,6 +50,22 @@ int _printf(const char *format, ...)
             {
                 count += print_string(args);
             }
+            else if (format[i] == 'o')
+            {
+                count += print_unsigned_octal(args);
+            }
+            else if (format[i] == 'x')
+            {
+                count += print_hexadecimal(args);
+            }
+            else if (format[i] == 'X')
+            {
+                count += print_hexadecimal_maj(args);
+            }
+            else if (format[i] == 'b')
+            {
+                count += print_binary(args);
+            }
             i++;
         }
     }

@@ -29,6 +29,12 @@ int main(void)
     printf("Modulo:100[%%]\n");
     _printf("String:[%s]\n", "I am a string !");
     printf("String:[%s]\n", "I am a string !");
+    _printf("Unsigned octal:[%o]\n", ui);
+    printf("Unsigned octal:[%o]\n", ui);
+    _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    _printf("%b\n", 98);
+    printf("%b\n", 98);
 
     return (0);
 }
