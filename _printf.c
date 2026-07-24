@@ -46,6 +46,10 @@ int _printf(const char *format, ...)
             {
                 count += print_modulo(args);
             }
+            else if (format[i] == 's')
+            {
+                count += print_string(args);
+            }
             i++;
         }
     }

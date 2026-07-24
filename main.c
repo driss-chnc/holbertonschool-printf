@@ -27,6 +27,8 @@ int main(void)
     printf("Unsigned:[%u]\n", ui);
     _printf("Modulo:100[%%]\n");
     printf("Modulo:100[%%]\n");
+    _printf("String:[%s]\n", "I am a string !");
+    printf("String:[%s]\n", "I am a string !");
 
     return (0);
 }
