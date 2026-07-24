@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_unsigned - Prints an integer in base 10
+ * print_unsign - Prints an integer in base 10
  * @args: va_list containing the integer to print
  * Return: Number of characters printed
  */
-int print_unsigned(va_list args)
+int print_unsign(va_list args)
 {
 int n;
 unsigned int num;
