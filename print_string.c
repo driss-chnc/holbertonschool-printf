@@ -15,7 +15,7 @@ count = 0;
 
 if (str == NULL)
 {
-str = "(nil)";
+str = "(NULL)";
 }
 
 while (str[count] != '\0')
