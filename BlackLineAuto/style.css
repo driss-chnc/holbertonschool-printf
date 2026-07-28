@@ -1,0 +1,320 @@
+/* ==========================
+   Police
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   Réglages généraux
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header {
+    padding: 20px 50px;
+    border-bottom: 1px solid #222;
+}
+
+/* ==========================
+   Première ligne
+========================== */
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ==========================
+   Logo
+========================== */
+
+.logo img,
+.top-header img {
+    width: 220px;
+    height: auto;
+}
+
+/* ==========================
+   Navigation
+========================== */
+
+.top-header ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.top-header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.top-header ul li a:hover {
+    color: #d4af37;
+}
+
+.navigation {
+    flex: 2;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 45px;
+}
+/* ==========================
+   Connexion
+========================== */
+
+.connexion {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.connexion a {
+    color: white;
+    text-decoration: none;
+}
+
+.connexion a:hover {
+    color: #d4af37;
+}
+
+/* ==========================
+   Slogan
+========================== */
+
+.slogan {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.slogan p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* ==========================
+   Responsive (optionnel)
+========================== */
+
+img {
+    max-width: 100%;
+}
+
+/* ==========================
+   Ligne
+========================== */
+
+header {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 80vh;
+
+    padding: 0 50px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #d1d1d1;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: white;
+    color: black;
+}
+
+/* ==========================
+   Dernières arrivées
+========================== */
+
+.latest-arrivals {
+    padding: 80px 50px;
+}
+
+.latest-arrivals h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* Conteneur des cartes */
+
+.cars {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Carte */
+
+.car-card {
+    width: 320px;
+    background-color: #111;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+/* Effet au survol */
+
+.car-card:hover {
+    transform: translateY(-8px);
+
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+
+    box-shadow: -5px 5px 20px rgba(255,255,255,0.15);
+}
+
+/* Image */
+
+.car-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Contenu */
+
+.car-content {
+    padding: 20px;
+}
+
+.car-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.car-content p {
+    color: #cfcfcf;
+    margin-bottom: 8px;
+}
+
+/* Prix */
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+/* Lien */
+
+.car-content a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.car-content a:hover {
+    letter-spacing: 1px;
+}
+/*=========================
+Cartes des voitures
+=========================*/
+.card-btn {
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    padding: 20px 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.card-btn::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: 20px;
+    
+    width: 78%;
+    height: 2px;
+
+    background-color: white;
+
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: transform 0.3s ease;
+}
+
+.card-btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* ==========================
+   Dernières arrivées
+========================== */
+
+.latest-arrivals {
+    padding: 80px 50px;
+}
+
+.latest-arrivals h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* Conteneur des cartes */
+
+.arrivals-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
