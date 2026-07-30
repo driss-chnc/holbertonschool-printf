@@ -8,5 +8,5 @@
 int print_modulo(va_list args)
 {
 (void) args;
-return (-1);
+return (1);
 }
