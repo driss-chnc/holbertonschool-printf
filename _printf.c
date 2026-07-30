@@ -13,18 +13,19 @@ int count;
 
 if (format == NULL)
 return (-1);
-
 va_start(args, format);
 i = 0;
 count = 0;
-
 while (format[i] != '\0')
 {
 if (format[i] == '%')
 {
 i++;
 if (format[i] == '\0')
-break;
+{
+    va_end(args);
+    return (-1);
+}
 count += handle_specifier(format[i], args);
 }
 else
