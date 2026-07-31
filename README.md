@@ -51,6 +51,8 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o a.out
 - Does not include explanations about `a.out` or `main.doc`, as requested.
 - This is an educational project: some implementations are intentionally simplified and focused on understanding (variadic functions, format parsing, handler-based design).
 - The architecture based on small specialized functions makes the code easier to extend (new specifiers) and to read.
+- This project was developed in collaboration with Theo Golik. We worked together on the implementation of all the project files, sharing the design, development, and debugging tasks. 
+The README.md was written entirely by me. However, we discussed its content together, and Theo reviewed and approved it before it was added to the project. During that time, he focused on ensuring that all source files complied with the Betty coding style and documentation requirements, and later explained to me the changes and methods he used so that every file successfully passed the Betty checks.
 
 ## Usage
 
